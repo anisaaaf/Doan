@@ -185,3 +185,37 @@ header.sticky{
     gap:3rem;
   
 }
+.first-info h1{
+    width: 140px;
+    height: auto;
+    font-size: 40px;
+}
+.contact-info h3{
+    color: black;
+    font-size:20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+.contact-info p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: all .42s;
+}
+.contact-info p:hover{
+    color: black;
+
+}
+.social-icons i{
+    color: black;
+    margin-right: 10px;
+    transition: all .42s;
+}
+.social-icons i:hover{
+    transform: scale(1.3);
+}
