@@ -18,9 +18,9 @@
             <h1>DOAN</h1>
 
             <ul class="navmenu">
-            	<li><a href="">SHOP WOMEN</li>
+            	<li><a href="shopwomen.html">SHOP WOMEN</li>
             	<li><a href="">COLLECTIONS</li>
-            	<li><a href="">ABOUT</li>
+            	<li><a href="about.html">ABOUT</li>
                 <li><a href="">CONTACT</li>
             </ul>
 
@@ -37,7 +37,7 @@
                 <button class="btnLogin-popup">
                     Login</button>
             </nav>
-				</header>
+		</header>
 		
 
         <section class="main-home">
@@ -45,35 +45,7 @@
 				<span class="icon-close">
 					<ion-icon name="close"></ion-icon>
 				</span>
-	
-				<div class="form-box login">
-					<h2>Login</h2>
-				 <form action="#">
-					<div class="input-box">
-						<span class="icon"> <ion-icon 
-							name="mail"></ion-icon></span>
-						<input type="email" required>
-						<label>Email</label>
-					</div>
-					<div class="input-box">
-						<span class="icon"><ion-icon 
-							name="lock-closed"></ion-icon></span>
-						<input type="password" required>
-						<label>Password</label>
-					</div>
-					<div class="remember-forgot">
-						<label><input type="checkbox"
-							>Remember me</label>
-							<a href="#">Forgot Password?</a>
-					</div>
-					<button type="submit" class="btn">Login</button>
-					<div class="login-register">
-						<p>Don't have an account?<a href="#"
-							 class="register-link">Register</a></p></div>
-				 </form>
-			
-				</div>
-	
+
 				<div class="form-box register">
 					<h2>Registration</h2>
 				 <form action="#">
@@ -81,32 +53,69 @@
 						<span class="icon">
 							<ion-icon name="person"></ion-icon>
 						</span>
-						<input type="text" required>
+						<input type="text" id="register-username">
 						<label>Username</label>
+						<p id="username-register-error" style="display: none;"></p>
 					</div>
 					<div class="input-box">
 						<span class="icon"> <ion-icon 
 							name="mail"></ion-icon></span>
-						<input type="email" required>
+						<input type="email" id="register-email">
 						<label>Email</label>
+						<p id="email-register-error" style="display: none;"></p>
+
 					</div>
 					<div class="input-box">
 						<span class="icon"><ion-icon 
 							name="lock-closed"></ion-icon></span>
-						<input type="password" required>
+						<input type="password" id="register-password">
 						<label>Password</label>
+						<p id="password-register-error" style="display: none;"></p>
+
 					</div>
 					<div class="remember-forgot">
 						<label><input type="checkbox"
 							>I agree to the terms & conditions</label>
 					</div>
-					<button type="submit" class="btn">Register</button>
+					<button type="submit" class="btn" onclick="validateRegisterForm()">Register</button>
 					<div class="login-register">
 						<p>Already have an account?<a href="#"
 							 class="login-link">Login</a></p></div>
 				 </form>
 			
 				</div>
+	
+				<div class="form-box login">
+					<h2>Login</h2>
+				 <form action="#">
+					<div class="input-box">
+						<span class="icon"> <ion-icon 
+							name="mail"></ion-icon></span>
+						<input type="email" id="email">   
+						<label>Email</label>
+						<p id="email-error" style="display: none;"></p>
+					</div>
+					<div class="input-box">
+						<span class="icon"><ion-icon 
+							name="lock-closed"></ion-icon></span>
+						<input type="password" id="password">
+						<label>Password</label>
+						<p id="password-error" style="display: none;"></p>
+					</div>
+					<div class="remember-forgot">
+						<label><input type="checkbox"
+							>Remember me</label>
+							<a href="#">Forgot Password?</a>
+					</div>
+					<button type="submit" class="btn"  onclick="validateForm()">Login</button>
+					<div class="login-register">
+						<p>Don't have an account?<a href="#"
+							 class="register-link">Register</a></p></div>
+				 </form>
+			
+				</div>
+	
+				
 	
 			</div>
         	<div class="main-text">
@@ -163,6 +172,34 @@
         		
         	</div>
         </section>
+
+        <section class="trending-collections" id="collections">
+            <div class="center-textt">
+                <h2>Collections</h2>
+               
+            </div>
+            <div class="collections">
+                <div class="roww">
+                    <img src="image00003.jpeg" alt="">
+                    <div class="product-textt">
+                        <h3>Spring/Summer</h3>
+                       
+                    </div>
+                   
+                </div>
+                <div class="roww">
+                    <img src="image00018.jpeg" alt="">
+                    <div class="product-textt">
+                        <h3>Fall/Winter</h3>
+                       
+                    </div>
+                   
+                </div>
+               
+            </div>
+               </section>
+
+        
 
         <section class="contact">
         	<div class="contact-info">
