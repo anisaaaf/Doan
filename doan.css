@@ -511,3 +511,81 @@ h5{
         text-decoration: underline;
     
     }
+    .center-textt h2{
+        color:black;
+        font-size: 30px;
+         text-transform: capitalize;
+          text-align: center;
+         margin-bottom: 55px;
+        }
+        .collections{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px , auto));
+           gap:2rem;
+        }
+        .roww{
+         position: relative;
+          transition: all .40s;
+        }
+        .roww img{
+          width: 100%;
+          height: auto;
+          transition: all .40s;
+        }
+        .roww img:hover{
+         transform: scale(0.9);
+        }
+
+        .center-texxt h2{
+           color:black;
+           font-size: 30px;
+           text-transform: capitalize;
+           text-align: center;
+           margin-bottom: 55px;
+            }
+            .clothes{
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(260px , auto));
+              gap:2rem;
+            }
+            .roow{
+             position: relative;
+            transition: all .40s;
+            }
+            .roow img{
+              width: 100%;
+              height: auto;
+            transition: all .40s;
+            }
+            .roow img:hover{
+             transform: scale(0.9);
+            }  
+          
+
+            .about{
+               background-color: gray;
+                }
+                
+                .us{
+                  display: flex;
+                  justify-content: center;
+                 align-items: center;
+                 width: auto;
+                 margin: 20px auto;
+                }
+                
+                
+                .aboutus{
+                flex: 1;
+                width: 1000px;
+                margin:0px 25px;
+                animation: fadeInUp 2s ease
+                }
+                .aboutus h2{
+                 font-size: 60px;
+                 margin-bottom: 20px;
+                
+                }
+                .aboutus p{
+                 font-size: 25px;
+                }
